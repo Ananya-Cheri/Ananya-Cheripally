@@ -9,7 +9,7 @@ export const links = {
 };
 
 export const about = {
-  heading: ["Building reliable data pipelines,", "from raw data to insight."],
+  heading: ["A little", "about me"],
   tagline: ["Data Engineering", "Python", "SQL", "ETL", "Data Analytics"],
   paragraphs: [
     "I'm Ananya, a Master of Computer Science (Data Science and AI) student from the University of Sydney, completing my coursework in November 2026. I enjoy turning raw data into something a team can rely on, and explaining it in plain language to the people who use it.",
