@@ -1,125 +1,55 @@
-# Ananya Cheripally — Portfolio
+# Hi, I'm Ananya Cheripally 👋
 
 **Data Engineering · Python · SQL · ETL · Data Analytics**
 
-👉 **Live site: [ananyacheripally.vercel.app](https://ananyacheripally.vercel.app)**
+🌐 **Portfolio: [ananyacheripally.vercel.app](https://ananyacheripally.vercel.app)** &nbsp;·&nbsp; 💼 [LinkedIn](https://www.linkedin.com/in/ananya-cheripally-5119131aa/) &nbsp;·&nbsp; ✉️ ananyacheripally2003@gmail.com &nbsp;·&nbsp; 📄 [Résumé](https://ananyacheripally.vercel.app/Ananya-Cheripally-Resume.pdf)
 
-Hi! I'm Ananya, a Master of Computer Science (Data Science and AI) student at the University of Sydney, looking for graduate and junior roles in data engineering and data analytics across Australia.
+I'm a Master of Computer Science (Data Science and AI) student at the University of Sydney, completing my coursework in November 2026. I enjoy turning raw data into something a team can rely on, and explaining it in plain language to the people who use it.
 
-This repository is the code behind my personal portfolio: an animated, illustrated website with a character whose eyes follow your cursor and a little plane that flies between sections as you scroll.
+I'm a quick learner who thrives in a team: I ask good questions, pick up new tools fast and care about doing things properly.
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/ananya-cheripally-5119131aa/)
-- ✉️ ananyacheripally2003@gmail.com
-- 📄 [Résumé](https://ananyacheripally.vercel.app/Ananya-Cheripally-Resume.pdf)
+📍 Sydney, NSW &nbsp;·&nbsp; 🎯 **Open to graduate & junior roles in data engineering and data analytics across Australia**
 
 ---
 
-## What's on the site
+## 🛠️ What I work with
 
-| Section | What you'll find |
-|---|---|
-| **Home** | "Hi, I'm Ananya Cheripally" with an illustrated character whose eyes follow the cursor |
-| **About** | A short introduction, quick facts, and an island where the plane lands |
-| **Skills** | Data Engineering, Databases & Modelling, Data Analysis & ML, plus technologies & tools |
-| **Experience** | Software Engineer (part-time) and Business Analyst Intern roles |
-| **Projects** | Filterable by Data Engineering, Databases and Machine Learning |
-| **Education** | Degrees, scholarship and certifications (each certificate links to its verification page) |
-| **Leadership & Volunteering** | Volunteering and student chapter roles |
-| **Contact** | Contact form, email, LinkedIn, GitHub and résumé download |
+- **Data Engineering:** Python ETL pipelines that load CSV, Excel and JSON data into relational databases, with data quality checks and reconciliation
+- **Databases & Modelling:** PostgreSQL, MySQL, PL/pgSQL functions and triggers, ER modelling, query optimisation
+- **Data Analysis & ML:** Pandas, NumPy, scikit-learn, Seaborn, Excel, classification models
+- **Tools:** Git, GitHub, VS Code, Jupyter Notebook, Tableau, Postman, Agile
 
----
+## 💼 Experience
 
-## Tech stack
+- **Software Engineer (Part-time)** · SAAC IT Solutions, Hyderabad · *Feb 2023 – Jan 2025*
+  Built and maintained Python ETL pipelines into PostgreSQL and MySQL, automated reporting, and built data quality checks.
+- **Business Analyst Intern** · SAAC IT Solutions, Hyderabad · *Jul 2022 – Jan 2023*
+  Gathered requirements, wrote Python automation and validation scripts, and ran UAT and API testing.
 
-| Tool | What it does |
-|---|---|
-| [Next.js](https://nextjs.org) | The framework the site is built on: turns the code into fast web pages |
-| [React](https://react.dev) | Builds the page from reusable components (Hero, Nav, Projects…) |
-| [TypeScript](https://www.typescriptlang.org) | JavaScript with type checks, catching mistakes before they go live |
-| [Tailwind CSS](https://tailwindcss.com) | Styling: colours, spacing and fonts written directly on each element |
-| [Motion](https://motion.dev) + [Motion Primitives](https://motion-primitives.com) | Animations: text blurring in, cards fading in on scroll, the sliding menu highlight, magnetic buttons |
-| [Lenis](https://lenis.darkroom.engineering) | Smooth, gliding scrolling |
-| GitHub | Stores the code and every version of it |
-| [Vercel](https://vercel.com) | Hosts the site and republishes it automatically on every push |
+## 🚀 Featured projects
 
----
+| Project | Area | Highlights |
+|---|---|---|
+| **Predicting High-Priority Crime Threats in NSW** | Machine Learning | 30 years of NSW crime data, 60+ offence subcategories, five classifiers compared, ~95% accuracy |
+| **Car Dealership Database System** | Databases | 12-table PostgreSQL database with PL/pgSQL triggers automating business rules |
+| **Forest Cover Classification & Diabetes Risk Analysis** | Machine Learning | SVM (RBF) with PCA and stratified cross-validation; health data cleaning and analysis |
+| **RideThe15 — Rideshare & Carpooling Platform** | Data Engineering | Data-processing workflows and daily, weekly and monthly trend dashboards |
 
-## How the code is organised
+More details on my [portfolio](https://ananyacheripally.vercel.app/#projects).
 
-```
-src/
-├── app/
-│   ├── page.tsx          ← the page: stacks all the sections in order
-│   ├── layout.tsx        ← fonts + smooth scrolling for the whole site
-│   └── globals.css       ← colours and all the little animations
-├── content/
-│   └── portfolio.ts      ← ALL the words: about, skills, projects, experience…
-└── components/
-    ├── Hero.tsx          ← "hi, I'm Ananya Cheripally" opening screen
-    ├── Avatar.tsx        ← the illustrated character (drawn in code)
-    ├── useEyeTracking.ts ← makes the eyes follow the cursor
-    ├── Plane.tsx         ← the flying plane + dotted trail
-    ├── Nav.tsx           ← the top menu
-    ├── motion-primitives/← animation building blocks (from Motion Primitives)
-    └── sections/         ← About + Island, Skills, Experience, Projects, Education, Contact…
-public/
-└── Ananya-Cheripally-Resume.pdf
-```
+## 🎓 Education
 
-**To change any text on the site, edit only [`src/content/portfolio.ts`](src/content/portfolio.ts).** Every section reads from that file automatically.
+- **Master of Computer Science (Data Science and AI)** · University of Sydney · *2025 – present*
+- **B.Tech, Computer Science Engineering** · GRIET, Hyderabad · *2020 – 2024*
+
+🏆 **Sydney Scholars India Scholarship (2025)**, awarded by the University of Sydney for academic performance, leadership and community engagement.
+
+📜 **Certifications:** [Azure Databricks Fundamentals](https://www.coursera.org/account/accomplishments/verify/68LBQNDMWNSR) · [Tableau Visualization & Design](https://www.coursera.org/account/accomplishments/verify/9E5A0NQJ5AQ7) · [What Is Generative AI?](https://www.linkedin.com/learning/certificates/e58f2fe9b28a011d0079d443dafaae3e3df3cb890c503a26ef53c519bb96d945)
+
+## ☕ Let's connect
+
+Feel free to reach out about graduate or junior opportunities, projects, or just to connect: **ananyacheripally2003@gmail.com** or [LinkedIn](https://www.linkedin.com/in/ananya-cheripally-5119131aa/).
 
 ---
 
-## How the fun parts work
-
-- **The character** is an SVG: a drawing made from code (circles, curves and colours) rather than an image file. Because every part is a separate shape, the eyes can move on their own.
-- **Eye tracking:** about 60 times a second, the code measures where the cursor is relative to each eye and nudges the pupils toward it. The character also blinks every few seconds.
-- **The plane:** each section title has an invisible "landing pad". As you scroll, the code works out which two pads you're between, places the plane along a smooth S-curve between them, and caps its speed so it always glides slowly. The dotted trail is its last ~90 positions joined into a line.
-- **Scroll effects:** the opening screen stays pinned while the name lifts away, then the next section slides up over it like a card.
-- **Project filters:** choosing a tab filters the list, and Motion animates the cards rearranging.
-- **Contact form:** opens the visitor's email app with their name, subject and message already filled in.
-
----
-
-## How it was built
-
-1. **Set up** an empty Next.js + Tailwind project and linked it to this GitHub repository.
-2. **Connected Vercel** to the repository, so every push publishes the site automatically.
-3. **Designed iteratively:** tried several styles (scrapbook, pencil, flat), characters and plane flights, keeping what worked.
-4. **Built section by section:** hero, About + island, Skills, Experience, Projects, Education, Leadership, Contact, filling in real content along the way.
-5. **Checked every change** before shipping: lint and type checks, a production build, and screenshots in a real browser on desktop and phone.
-6. **Shipped:** committed each version, pushed it to GitHub, and Vercel put it live.
-
----
-
-## Run it locally
-
-You'll need [Node.js](https://nodejs.org) installed.
-
-```bash
-npm install      # install dependencies (first time only)
-npm run dev      # start the site at http://localhost:3000
-```
-
-Other commands:
-
-```bash
-npm run lint     # check the code for problems
-npm run build    # build the production version (what Vercel runs)
-```
-
-## Updating the site
-
-```
-edit src/content/portfolio.ts  →  commit & push to GitHub  →  Vercel auto-publishes (~1 min)
-```
-
-You can also edit `src/content/portfolio.ts` directly on GitHub (open the file → ✏️ → **Commit changes**).
-
-## Secrets
-
-The site doesn't use any API keys or passwords. If one is ever needed, put it in a `.env.local` file (never committed; see `.gitignore`) and add it in Vercel under **Settings → Environment Variables**.
-
----
-
-© Ananya Cheripally. The illustrations and content are my own; please don't reuse them without asking.
+<sub>This repo is the code for my portfolio website. Curious how it was built? See [src/HOW_THIS_WAS_BUILT.md](src/HOW_THIS_WAS_BUILT.md).</sub>
