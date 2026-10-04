@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { Magnetic } from "@/components/motion-primitives/magnetic";
+import { links } from "@/content/portfolio";
 
-const GITHUB = "https://github.com/Ananya-Cheri";
 const SECTIONS = [
   { id: "top", label: "Home" },
   { id: "about", label: "About" },
@@ -81,7 +81,7 @@ export default function Nav() {
 
       <Magnetic intensity={0.35} range={90}>
         <a
-          href={GITHUB}
+          href={links.github}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Ananya's GitHub profile"

@@ -2,7 +2,7 @@
 // Everything below is PLACEHOLDER text — replace it with your real details.
 
 export const links = {
-  github: "https://github.com/Ananya-Cheri",
+  github: "https://github.com/Ananya-Cheri/Ananya-Cheripally#readme",
   linkedin: "https://www.linkedin.com/in/ananya-cheripally-5119131aa/",
   email: "ananyacheripally2003@gmail.com",
   resume: "/Ananya-Cheripally-Resume.pdf",
