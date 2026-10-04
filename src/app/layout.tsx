@@ -1,14 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Caveat, DM_Sans, Instrument_Serif } from "next/font/google";
+import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const display = Instrument_Serif({
+  variable: "--font-display",
   subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const hand = Caveat({
+  variable: "--font-hand",
+  subsets: ["latin"],
+  weight: ["500", "700"],
+});
+
+const body = DM_Sans({
+  variable: "--font-body",
   subsets: ["latin"],
 });
 
@@ -19,11 +28,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`${display.variable} ${hand.variable} ${body.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col font-sans">
+        <SmoothScroll />
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,26 +1,125 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* matches the background of the portrait so it melts into the page */
+  --paper: #fbf0de;
+  --ink: #1f1915;
+  --rose: #d9707a;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-rose: var(--rose);
+  --font-display: var(--font-display);
+  --font-hand: var(--font-hand);
+  --font-sans: var(--font-body);
+  --animate-scrollline: scrollline 1.8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+  --animate-steam: steam 2.4s ease-in-out infinite;
+  --animate-propeller: propeller 0.18s linear infinite;
+  --animate-waves: waves 3s ease-in-out infinite;
+  --animate-drift: drift 9s ease-in-out infinite;
+  --animate-sway-slow: sway-slow 4s ease-in-out infinite;
+  --animate-windsock: windsock 1.6s ease-in-out infinite;
+  --animate-bob-doodle: bob-doodle 3.2s ease-in-out infinite;
+  --animate-flow: flow 1s linear infinite;
+  --animate-hop: hop 2.4s ease-in-out infinite;
+  --animate-twinkle: twinkle 1.8s ease-in-out infinite;
+  --animate-grow: grow 2.8s ease-in-out infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes bob-doodle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+@keyframes flow {
+  to { stroke-dashoffset: -12; }
+}
+@keyframes hop {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .55; }
+}
+@keyframes grow {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(.85); }
+}
+@keyframes waves {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+}
+@keyframes drift {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(24px); }
+}
+@keyframes sway-slow {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+@keyframes windsock {
+  0%, 100% { transform: rotate(-4deg) scaleX(1); }
+  50% { transform: rotate(4deg) scaleX(0.92); }
+}
+@keyframes propeller {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.15); }
+}
+@keyframes steam {
+  0% { opacity: 0; transform: translateY(6px); }
+  40% { opacity: .9; }
+  100% { opacity: 0; transform: translateY(-14px); }
+}
+/* tag chips light up under the cursor */
+@utility chip {
+  border-radius: 9999px;
+  cursor: default;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  &:hover {
+    background-color: var(--rose);
+    border-color: var(--rose);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px -8px rgba(217, 112, 122, 0.7);
   }
 }
 
+/* avatar blink */
+.eye-blink {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.09s ease-in;
+}
+.blinking .eye-blink {
+  transform: scaleY(0.08);
+}
+
+@keyframes scrollline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(200%); }
+}
+
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: clip;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+::selection {
+  background: var(--rose);
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    transition: none !important;
+  }
 }
