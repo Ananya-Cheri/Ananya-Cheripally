@@ -20,21 +20,40 @@
 # production
 /build
 
-# misc
-.DS_Store
+# ---- secrets: never commit these ----
+# environment variables (API keys, tokens, passwords)
+.env*
+!.env.example
+# keys, certificates and credential files
 *.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cert
+*secret*
+*credentials*
+service-account*.json
 
-# debug
+# vercel (project link + pulled env vars)
+.vercel
+
+# debug & logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+*.log
 
-# env files (can opt-in for committing if needed)
-.env*
+# OS files
+.DS_Store
+Thumbs.db
 
-# vercel
-.vercel
+# editor & tool settings
+.vscode/
+.idea/
+*.swp
+.claude/
 
 # typescript
 *.tsbuildinfo
